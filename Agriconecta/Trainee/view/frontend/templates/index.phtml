@@ -1,0 +1,32 @@
+
+<div class="general-container">
+    <div class="internal-container">
+            <img src="<?php echo $block->getViewFileUrl('Agriconecta_Trainee::images/jclogo.png'); ?>" alt="logo jcsolutions">
+            <form action="<?php echo $block->getFormActionUrl(); ?>" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name"  placeholder="Escribe tu nombre" required>
+
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Escribe tu apellido" required>
+
+
+                <label for="age">Edad</label>
+                <input type="number" id="age" name="age" placeholder="Escribe tu edad" required>
+
+                <div class="inputs-row">
+                    <div class="half-width">
+                        <label for="height">Altura</label>
+                        <input type="number" id="height" name="height" placeholder="Escribe tu altura" required>
+                    </div>
+
+                    <div class="half-width">
+                        <label for="weight">Peso</label>
+                        <input type="number" id="weight" name="weight" placeholder="Escribe tu peso" required>
+                    </div>
+                </div>
+
+                <br>
+                <button>Guardar</button>
+        </form> 
+    </div>
+</div>
