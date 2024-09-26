@@ -1,8 +1,5 @@
 package models
 
-
-package models
-
 const REGION = "us-east-2"
 
 type GitHubWebhook struct {
