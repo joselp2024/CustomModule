@@ -1,9 +1,9 @@
 package main 
 
 import (
-	"net/http"  
-    "fmt"
+	"fmt"
 	"io"
+	"net/http"  
 	"github.com/gorilla/mux"
 )
 
@@ -16,7 +16,7 @@ func postHandler(w http.ResponseWriter, r *http.Request) {
 	body, err := io.ReadAll(r.Body)
 	if err != nil {
 		fmt.Println("Error reading the request")
-		
+
 		return
 	}
 
